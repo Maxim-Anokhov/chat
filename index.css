@@ -1,0 +1,276 @@
+    body {
+        display: grid;
+        list-style: none;
+        display: grid;
+        background: gray;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .wrapper {
+        display: grid;
+        align-items: center
+    }
+    
+    .main_screen {
+        display: grid;
+        margin: 0 auto;
+        width: 304px;
+        height: 520px;
+        background: #FFFFFF;
+        grid-template-columns: 234px 35px 35px;
+        grid-template-rows: 40px 445px 40px;
+        grid-auto-flow: column;
+        padding: 8px;
+    }
+    
+    .settings_button {
+        grid-column: 1/2;
+        grid-row: 1;
+        width: 98px;
+        height: 32px;
+    }
+    
+    .exit {
+        grid-row: 1;
+        grid-column: 2/4;
+        width: 66px;
+        height: 32px;
+        margin-left: 4px;
+    }
+    
+    .chat {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        height: 435px;
+        width: 302px;
+        border: solid 1px;
+        overflow: scroll;
+        /* height: auto; */
+    }
+    
+    .chat_content {
+        width: 302px;
+        height: 435;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: start;
+    }
+    
+    .chat::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    .i_sade {
+        grid-column: 1/3;
+        grid-column-start: 2;
+        background-color: #E5E5E5;
+        padding: 8px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8px;
+        justify-items: end
+    }
+    
+    .he_said {
+        grid-column: 1/3;
+        grid-auto-flow: minmax(40px, auto);
+        background-color: #E5E5E5;
+        padding: 8px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8px;
+        justify-items: end
+    }
+    
+    .text_i_said {
+        grid-column: 1/3;
+        margin: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .text_hi_said {
+        grid-column: 1/3;
+        margin: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .time {
+        grid-column: 2/3;
+        justify-items: end;
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    
+    .submit {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 1/4;
+        padding-bottom: 4px;
+    }
+    
+    .input_window {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        width: 265px;
+        height: 30px;
+        padding: 0;
+        grid-row-gap: 8px;
+        font-size: 16px;
+    }
+    
+    .submit_button {
+        grid-row: 3/4;
+        grid-column: 3/4;
+        width: 29px;
+        height: 32px;
+        margin-left: 8px;
+    }
+    
+    .modal_window {
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        visibility: hidden;
+        display: grid;
+    }
+    
+    .modal_window_visible {
+        visibility: visible;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .settings_modal {
+        width: 245px;
+        height: 289px;
+        background: #FFFFFF;
+        display: grid;
+        background: #FFFFFF;
+        grid-template-columns: 175px 35px 35px;
+        grid-template-rows: 40px 45px 40px;
+        grid-auto-flow: column;
+        padding: 14px;
+        padding-top: 16px;
+        align-items: center;
+        z-index: 1;
+        position: fixed;
+    }
+    
+    .p_settings {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .exit_modal {
+        width: 15px;
+        height: 15px;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-left: 18px;
+        background-color: #FFFFFF;
+        background-image: url(delete1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+    }
+    
+    .p_name {
+        font-size: 16px;
+    }
+    
+    .submit_name {
+        grid-column: 1/4;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 215px 33px;
+        font-size: 16px;
+    }
+    
+    .input_modal {
+        width: 200px;
+        height: 26px;
+        grid-column: 1;
+        font-size: 16px;
+        border: solid 1px;
+    }
+    
+    .submit_button_modal {
+        grid-column: 2;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .autorisation_modal,
+    .confirmation_modal {
+        width: 245px;
+        height: 289px;
+        background: #FFFFFF;
+        display: grid;
+        background: #FFFFFF;
+        grid-template-columns: 175px 35px 35px;
+        grid-template-rows: 40px 40px 45px 47px;
+        grid-auto-flow: column;
+        padding: 14px;
+        padding-top: 16px;
+        align-items: center;
+        position: fixed;
+    }
+    
+    .p_autorisation {
+        margin: 0;
+    }
+    
+    .p_code,
+    .p_mail {
+        margin: 0;
+        grid-row: 3/4;
+    }
+    
+    .submit_code,
+    .submit_mail {
+        width: 245px;
+        grid-row: 4/5;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-rows: 35px 35px;
+        grid-row-gap: 7px;
+    }
+    
+    .input_code .input_mail {
+        height: 32px;
+    }
+    
+    .enter,
+    .get_code {
+        width: min-content;
+    }
+    
+    .autorisation_modal {
+        z-index: 3;
+    }
+    
+    .confirmation_modal {
+        z-index: 2;
+    }
+    
+    .passiv {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0)
+    }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main_screen">
+
+
+            <button class="settings_button">Настройки</button>
+            <button class="exit">Выйти</button>
+            <div class="chat">
+                <div class="chat_content">
+                    <div class="i_sade">
+                        <p class="text_i_said">Я: Добрый день</p>
+                        <p class="time">18:45</p>
+                    </div>
+                    <div class="he_said">
+                        <p class="text_hi_said">Собеседник мой: Добрый день</p>
+                        <p class="time">18:45</p>
+                    </div>
+                    <div class="he_said">
+                        <p class="text_hi_said">
+                            Собеседник мой: Аэто второе, и кажется, оно очень длинное,чтобы поместится на одной строке
+                        </p>
+                        <p class="time">18:45</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <form class="submit">
+                <input type="text" class="input_window" value="сообщение...">
+                <input type="button" class="submit_button">
+            </form>
+
+        </div>
+        <div class="modal_window">
+            <div class="settings_modal">
+                <p class="p_settings">Настройки</p>
+                <button class="exit_modal"></button>
+                <p class="p_name">Имя в чате:</p>
+                <form class="submit_name">
+                    <input type="text" class="input_modal">
+                    <input type="button" class="submit_button_modal">
+                </form>
+            </div>
+            <div class="autorisation_modal">
+                <p class="p_autorisation">Авторизация</p>
+                <button class="exit_modal"></button>
+                <p class="p_mail">Почта:</p>
+                <form class="submit_mail">
+                    <input type="text" class="input_mail">
+                    <input type="button" class="get_code" value="Получить код">
+                </form>
+            </div>
+            <div class="confirmation_modal">
+                <p class="p_autorisation">Подтверждение</p>
+                <button class="exit_modal"></button>
+                <p class="p_code">Код:</p>
+                <form class="submit_code">
+                    <input type="text" class="input_code">
+                    <input type="button" class="enter" value="Войти">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
